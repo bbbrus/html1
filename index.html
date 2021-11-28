@@ -1,0 +1,28 @@
+<!DOCTYPE html >
+<html>
+ <head>
+ <title>Be_just клик</title>
+</head>
+ 
+<body>
+ <h1>кликер</h1>
+ <p>эте кликер для убивания времини</p>
+ <h3>тыкай и наслождайся</h3>
+  <div id="clickdiv" >hello</div> 
+  <button  onclick="countTracker()">Click me</button> 
+  <script type="text/javascript">
+
+      var clickCount = 0;
+      function countTracker() {
+          clickCount += 1;
+          document.getElementById("clickdiv").innerHTML = "Clicks:" + clickCount;
+          localStorage.setItem("count", clickCount);
+
+      }
+      str_count = localStorage.getItem("count");
+      console.log(str_count);
+    </script>
+	<p><img src="https://i1.sndcdn.com/artworks-000631586848-vfch1p-t500x500.jpg" alt="паша техник"></p>
+
+
+</body></html>
